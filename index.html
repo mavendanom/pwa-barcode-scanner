@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Escáner PWA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <script src="https://unpkg.com/@zxing/library@latest"></script>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; }
+    #video { width: 100%; max-width: 400px; border: 2px solid #333; }
+    #result { margin-top: 15px; font-weight: bold; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h2>Escáner de Códigos</h2>
+  <video id="video" autoplay></video>
+  <div id="result">Esperando lectura...</div>
+  <script src="app.js"></script>
+</body>
+</html>
