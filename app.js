@@ -19,7 +19,8 @@ async function startScanner() {
                     ?.deviceId || devices[0].deviceId;
     await codeReader.decodeFromVideoDevice(deviceId, videoElem, (result, err) => {
       if (result) {
-        resultElem.textContent = `Código detectado: ${result.getText()}`;
+        //resultElem.textContent = `Código detectado: ${result.getText()}`;
+        document.href = 'https://cosmetic-distribucion.cl/Search?sku='+ ${result.getText()};
       }
     });
   } catch (error) {
